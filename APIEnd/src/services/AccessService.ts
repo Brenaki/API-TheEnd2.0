@@ -1,4 +1,4 @@
-const en = [
+export const en = [
     {
         how: 'How?', //  How to access to The End?
         language: 'en',
@@ -9,7 +9,7 @@ const en = [
         portal to go to the End, along with other entities that were teleported before.`
     }
 ]
-const pt = [
+export const pt = [
     {
         how: 'Como?', // Como você acessa o Fim? 
         language: 'pt',
