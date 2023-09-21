@@ -1,0 +1,14 @@
+version: '3.5'
+services:
+  app:
+    build: .
+    container_name: API-END
+    command: npm run start:prod
+    tty: true
+  db:
+    image: 'postgres:16.0'
+    container_name: db-API
+    environment:
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+    ports:
+      - 2000:5432
